@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="app.css">
+        
+    </head>
+    
+    <body style="margin: 0px;">
+        <div class="App">
+            <!-- used webGl canvas for making the shaders  used in dark theme as a background -->
+            <canvas id="fluidCanvas"  ></canvas> 
+
+            <input type="checkbox" id="nav-tog">
+            <label for="nav-tog" class="nav-tog-lab">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+            <input type="checkbox" id="pro-tog">
+        <div include-html="./component/navbar.html" id="navbar" class="navbar"></div>
+        <div include-html="./pages/dashboard.html" id="dashboard" class="dashboard"></div>       
+        <div include-html="./component/profile.html" id="profile" class="profile">
+        </div>
+    </div>
+</body>
+<!-- this is the backgrounf color splash code for night node -->
+<script src="js/index.js"></script>
+<!-- having javascript to switch the theme -->
+<script src="js/app.js"></script>
+<!-- below two codes are giving html functioning  to include file by using include-html property in html tag -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/include-html.min.js"></script>
+<!-- this is the cript for the fonts ans icons -->
+<script src="https://kit.fontawesome.com/adb625af63.js" crossorigin="anonymous"></script>
+</html>
