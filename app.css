@@ -268,10 +268,15 @@ ul::-webkit-scrollbar {
         padding-left: 10px;
         color: var(--color-btn)
 }
+.chart-mrg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .crdfrm{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    min-width: 200px;
     margin: 10px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.3);
@@ -642,6 +647,15 @@ only screen and (max-width: 760px),
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+    .topl{
+        h3{
+            color: var(--color-btn);
+            
+        }
+        p{
+            color: var(--color-p);
+        }
+    }
   }
   .propic{
     display:flex;
@@ -670,12 +684,14 @@ only screen and (max-width: 760px),
             font-size: 20px;
         }
     }
+    
     .task-sec{
     display: flex;
     flex-direction: column;
     padding: 10px;
     h1{
         padding: 10px;
+        color: var(--color-btn);
     }
     .crdfrm .pack p{
         color: var(--color-btn);
